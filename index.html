@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculation</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <center>
+    <div class="outer">
+        <h1 style="font-size: large;">BMI Calculation</h1>
+        <div class="inner">
+            <input type="number" id="weight" placeholder="Enter your weight in KG"></input>
+            <br>
+            </div>
+<div class="inner2">
+            <input type="number" id="height" placeholder="Enter your height in Meters"></input>
+        </div class="button">
+            <button type="submit" onclick="calculate()">Convert to BMI</button>
+       
+    </div>
+    <div id="result">
+
+    </div>
+
+    </div>
+</center>
+    <script >
+        function calculate(){
+        var a= document.getElementById("weight").value
+        var b= document.getElementById("height").value /100
+        var c=b*b
+        var d=a/c
+        var result=document.getElementById("result")
+        result.innerHTML=d
+        }
+
+    </script>
+</body>
+</html>
